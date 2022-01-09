@@ -1,1 +1,29 @@
-
+pipeline {
+    agent any
+    
+    stages {
+        stage('preparation') {
+            steps {
+                echo 'entering in to preaparion stage'
+                echo 'preaparion stage completed'
+                
+            }
+        }
+        
+        stage('build') {
+            steps{
+                echo "entering in to build stage"
+                echo "build stage completed"
+                
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo "entering in to deploy stage"
+                echo "deploy stage completed"
+                
+            }
+        }
+      
+    }
+}
