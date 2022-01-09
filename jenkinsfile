@@ -9,14 +9,6 @@ pipeline {
                 
             }
         }
-        
-        stage('build') {
-            steps{
-                echo "entering in to build stage"
-                echo "build stage completed"
-                
-            }
-        }
         stage('deploy') {
             steps {
                 echo "entering in to deploy stage"
